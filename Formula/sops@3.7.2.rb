@@ -6,6 +6,12 @@ class SopsAT372 < Formula
   license "MPL-2.0"
   head "https://github.com/mozilla/sops.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/RebelMouseTeam/homebrew-local/releases/download/sops@3.7.2-3.7.2"
+    sha256 cellar: :any_skip_relocation, big_sur:      "39344c043367a596cb985005a7f2e7387c3d3d23a85a3366ce025394876cc8c4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "9a46a3a274592be105d7ae34a2f2a4c7d483f811833638f86cca578c43da0d73"
+  end
+
   depends_on "go" => :build
 
   def install
